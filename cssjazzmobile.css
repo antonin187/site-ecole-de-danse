@@ -1,0 +1,165 @@
+/* html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} */
+body {
+  margin: 0;
+  width: 100%;
+  padding-bottom: 7%;
+  min-height: 100%;
+}
+.container {
+  width: 100%;
+  height: inherit;
+}
+.bandeau {
+  width: 100%;
+  background-color: #18ffff;
+}
+td {
+  width: 20%;
+  font-size: 17px;
+  font-family: Monotype Corsiva;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.bandeauacceuil,
+.bandeauclassique,
+.bandeauéveil,
+.bandeaucontact {
+  transition: 0.3s;
+  text-decoration: none;
+  color: black;
+}
+.bandeaujazz {
+  text-decoration: none;
+  color: white;
+}
+.bandeauacceuil:hover,
+.bandeauclassique:hover,
+.bandeauéveil:hover,
+.bandeaucontact:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.intropresentationjazz {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  font-family: Monotype Corsiva;
+  font-size: 35px;
+  text-decoration: underline;
+  color: #ffab91;
+}
+.presentationjazz {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Maven Pro", sans-serif;
+  width: 100%;
+  line-height: 25px;
+}
+#evlink,
+#classlink,
+#fblink {
+  color: #ffab91;
+  text-decoration: none;
+}
+#evlink:hover,
+#classlink:hover,
+#fblink:hover {
+  color: #18ffff;
+}
+.containimages {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+#photojazz1 {
+  height: 138px;
+}
+#photojazz2 {
+  height: 138px;
+}
+.emploidutempsjazz {
+  width: 100%;
+  margin-top: 50px;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+}
+.emploidutempsjazzcell {
+  font-size: 19px;
+  font-family: "Maven Pro", sans-serif;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.nouscontacter {
+  width: 100%;
+  color: #ffab91;
+  margin-top: 12%;
+  font-size: 230%;
+  font-family: Monotype Corsiva;
+}
+#facebook {
+  border-radius: 5px;
+  width: 70px;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#facebook:hover {
+  transform: scale(1.05);
+}
+#facebook:active {
+  transform: scale(0.9);
+}
+.notrefacebook {
+  font-size: 20px;
+  font-family: "Maven Pro", sans-serif;
+  color: #39569b;
+  font-weight: bold;
+}
+#Instagram {
+  width: 70px;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#Instagram:hover {
+  transform: scale(1.05);
+}
+.notreinsta {
+  font-size: 20px;
+  font-family: "Maven Pro", sans-serif;
+  color: #39569b;
+  font-weight: bold;
+}
+
+#map {
+  width: 70px;
+
+  border: none;
+  outline: none;
+
+  transition: 0.2s;
+  cursor: pointer;
+}
+#map:hover {
+  transform: scale(1.05);
+}
+.notreadresse {
+  font-size: 20px;
+  font-family: "Maven Pro", sans-serif;
+  color: #39569b;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}

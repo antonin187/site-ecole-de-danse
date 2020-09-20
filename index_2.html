@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    
+	<head>
+	<!--<style type="text/css">
+	html, body {margin: 0; padding: 0;}
+</style> Cela permet d'enlever les marges en haut et à gauche de la page-->
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width">
+		
+	    <title>École de Danse Estelle Simon </title>
+		<!--<link rel="stylesheet" href="style.css"/>-->
+		<link rel="stylesheet" href="cssindexmobile.css" />
+		
+		
+		
+		
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+			</style> <!-- lien vers les polices d'écriture google fonts-->
+		
+	</head>
+
+
+	
+	<body>
+<div class="container">
+<div id="h1">Ecole de Danse Estelle Simon <br> à Chateaubernard </br></div>
+
+	
+	<div id="fondécran"><img src="fondecran.png" style="width: 100%;"></div>
+	<div id="h2">Ecole de danse Jazz et Classique</div>
+	
+	
+	<div class="present"><img src="estelle.png" alt="Jazz" id="photoestelle"><img src="logodanse.png" id="logo"></div>
+
+
+	<div class="tableauboutons">
+	
+	<a href="index.html" style="text-decoration:none;"><!-- le lien n'aura pas de decoration--><button class="acceuil"> Acceuil </button></a>
+	
+	<a href="classiquesiteecole.html" style="text-decoration:none;"> <button class="Classique"> Classique </button></a>
+	
+	<a href="sitejazz.html" style="text-decoration:none;" > <button class="Jazz"> Jazz </button>
+	
+	<a href="siteéveil.html" style="text-decoration:none;"> <button class="Eveil"> Éveil</button>
+	
+	<a href="sitecontact.html" style="text-decoration:none;"> <button class="Contact"> Contactez-nous</button></a>
+	</div>
+
+	
+
+	
+	
+	<div class="textacceuil"><font face="'Maven Pro', sans-serif" ><p style="margin-right: 5%; margin-left: 5%; font-size: 18px;">Du lundi jusqu'au samedi <strong>L’École de 
+		danse Estelle Simon</strong> vous accueille dans sa salle de danse à <strong>Châteaubernard</strong> près de Cognac. 
+	<br><br>L'école propose des cours de danse <strong>jazz</strong>, <strong>classique</strong> et <strong>des cours d'éveil</strong> 
+	depuis sa création en 2001. Les cours sont assurés par <strong>Estelle Simon</strong>,
+	 professeur de danse <strong>diplômée d’État
+	</strong>, formé à Paris. Ces cours de danse peuvent être suivis dès l'âge de 4 ans et permettent de mélanger convivialité et passion.
+<br><br>La compagnie <strong>Egoa</strong>, constituée de quelques danseuses de l’école, participe aussi à des événements en 
+dehors de son enceinte.</font></br></br></br></br></p></div>
+	
+<div class="containerimages">
+	<div class="images">
+
+		<div onmouseover="animechauffement();"
+		onmouseout="animechauffementreverse();"
+		class="divpic1">
+			<div class="echauffement"><!-- image echauffement --></div>
+			<div class="divechauffement">ECHAUFFEMENTS</div>
+		</div>
+
+
+		<div onmouseover="animpointes();"
+		onmouseout="animpointesreverse();"
+		class="divpic2">
+			<div class="amelia"><!--  image amelia --></div>
+			<div class="divpointes">COURS DE <br>POINTES</br></div>
+		</div>
+
+
+		<div onmouseover="animclassique();"
+		onmouseout="animclassiquereverse();"
+		class="divpic3">
+			<div class="cours"><!-- image cours classique --></div>
+			<div class="divclassique">COURS DE <br>CLASSIQUE</br></p></div>
+	</div>
+
+	</div>
+</div>
+
+	
+
+	
+	
+	
+	<div class="nouscontacter"><strong><center>Nous Contacter...</center></strong></div>
+	
+	
+	<table style="width: 100%; margin-top: 80px;">
+
+		<tr>
+			<td><center><a href="https://fr-fr.facebook.com/Ecole-de-Danse-Estelle-Simon-102653823128396/"> <img src="facebook.png" alt="facebook" id="facebook"></a></center></td>
+			<td><center><a href="https://www.instagram.com/ecole_danse_estelle_simon/"> <img src="Instagram.png" alt="Instagram" id="Instagram"></a></center></td>
+			<td><center><a href="https://www.google.fr/maps/place/Simon+Estelle/@45.6854727,-0.318174,17z/data=!3m1!4b1!4m5!3m4!1s0x4800f34ffd0e551b:0xc5e77cd8a3553b4d!8m2!3d45.6854727!4d-0.3159853"> <img src="map.png" alt="map" id="map"></a></center></td>
+		</tr>
+		<tr style="padding-top: 0;">
+			<td><div class="notrefacebook"><center> Notre facebook </center></div></td>
+			<td><div class="notreinsta"><font color="#dd1d73"><center> Notre Instagram </center></font></div></td>
+			<td><div class="notreadresse"><center><font color="#21a462"> Notre adresse <br><font size="1"> 28 Rue du Dominant 16100 Châteaubernard </font></font></center></div></td>
+		</tr>
+		
+		
+		
+		
+	</table>
+	
+	
+
+	
+	
+	<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+	integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw="
+	crossorigin="anonymous"
+  ></script>
+
+  <script
+	src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/TextPlugin.min.js.map"
+	integrity="undefined"
+	crossorigin="anonymous"
+  ></script>
+
+  <script src="jsecole.js"></script>
+	
+	
+</div>	
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>	
+</body>	
+</html>
+<!--AR BERKLEY
+1370px de large-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

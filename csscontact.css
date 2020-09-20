@@ -1,0 +1,316 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  width: 100%;
+  padding-bottom: 7%;
+  min-height: 100%;
+}
+.container {
+  width: 100%;
+  height: inherit;
+}
+.bandeau {
+  width: 100%;
+  background-color: #18ffff;
+}
+td {
+  font-size: 25px;
+  font-family: "Lobster Two", cursive;
+  text-align: center;
+  padding: 20px;
+  width: 20%; /* chaque largeur de cellule represente 20% de la largeur totale les cellules sont régulièrent étant donné qu'il y a 5 cellules*/
+}
+.bandeauacceuil,
+.bandeauclassique,
+.bandeaujazz,
+.bandeauéveil {
+  transition: 0.3s;
+  text-decoration: none;
+  color: black;
+}
+.bandeaucontact {
+  text-decoration: none;
+  color: white;
+}
+.bandeauacceuil:hover,
+.bandeauclassique:hover,
+.bandeaujazz:hover,
+.bandeauéveil:hover,
+.bandeaucontact:hover {
+  color: white;
+  cursor: pointer;
+}
+#adresseecole {
+  margin-top: 40px;
+  border: solid 3px #18ffff;
+}
+
+.cartedeecole {
+  padding-top: 50px;
+}
+.mobile {
+  padding-top: 30px;
+  font-size: 25px;
+  color: #ffab91;
+  font-family: "Maven Pro", sans-serif;
+}
+#num {
+  text-decoration: underline;
+  color: #ffab91;
+}
+#num:hover {
+  color: #18ffff;
+}
+.adressemail {
+  font-size: 25px;
+  color: #ffab91;
+  font-family: "Maven Pro", sans-serif;
+}
+#mail {
+  text-decoration: underline;
+  color: #ffab91;
+}
+#mail:hover {
+  color: #18ffff;
+}
+
+.nouscontacter {
+  padding-top: 80px;
+  color: #ffab91;
+  font-size: 330%;
+  font-family: "Lobster Two", cursive;
+}
+
+#facebook {
+  border-radius: 5px;
+
+  width: 130px;
+
+  border: none;
+  outline: none;
+
+  transition: 0.2s;
+  cursor: pointer;
+}
+#facebook:hover {
+  transform: scale(1.05);
+}
+#facebook:active {
+  transform: scale(0.9);
+}
+.notrefacebook {
+  font-size: 30px;
+  font-family: "Maven Pro", sans-serif;
+  color: #39569b;
+  font-weight: bold;
+}
+#Instagram {
+  width: 130px;
+
+  border: none;
+  outline: none;
+
+  transition: 0.2s;
+  cursor: pointer;
+}
+#Instagram:hover {
+  transform: scale(1.05);
+}
+.notreinsta {
+  font-size: 30px;
+  font-family: "Maven Pro", sans-serif;
+  color: #39569b;
+  font-weight: bold;
+}
+
+#map {
+  width: 130px;
+
+  border: none;
+  outline: none;
+
+  transition: 0.2s;
+  cursor: pointer;
+}
+#map:hover {
+  transform: scale(1.05);
+}
+.notreadresse {
+  font-size: 30px;
+  font-family: "Maven Pro", sans-serif;
+  color: #39569b;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    width: 100%;
+    padding-bottom: 7%;
+    min-height: 100%;
+  }
+  .container {
+    width: 100%;
+    height: inherit;
+  }
+  .bandeau {
+    width: 100%;
+    background-color: #18ffff;
+  }
+  td {
+    padding: 10px;
+    width: 20%;
+    font-size: 17px;
+    font-family: Monotype Corsiva;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px; /* chaque largeur de cellule represente 20% de la largeur totale les cellules sont régulièrent étant donné qu'il y a 5 cellules*/
+  }
+  .bandeauacceuil,
+  .bandeauclassique,
+  .bandeaujazz,
+  .bandeauéveil {
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+  }
+  .bandeaucontact {
+    text-decoration: none;
+    color: white;
+  }
+  .bandeauacceuil:hover,
+  .bandeauclassique:hover,
+  .bandeaujazz:hover,
+  .bandeauéveil:hover,
+  .bandeaucontact:hover {
+    color: white;
+    cursor: pointer;
+  }
+  #adresse {
+    width: 100%;
+    text-align: center;
+    font-family: Monotype Corsiva;
+    font-size: 45px;
+    color: #ffab91;
+    margin-top: 40px;
+  }
+  #ladresse {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: #ffab91;
+    font-family: "Maven Pro", sans-serif;
+  }
+
+  .cartedeecole {
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  #themap {
+    width: 100%;
+    height: 400px;
+  }
+  .mobile {
+    padding-top: 30px;
+    font-size: 25px;
+    color: #ffab91;
+    font-family: "Maven Pro", sans-serif;
+  }
+  #num {
+    text-decoration: underline;
+    color: #ffab91;
+  }
+  #num:hover {
+    color: #18ffff;
+  }
+  .adressemail {
+    font-size: 25px;
+    color: #ffab91;
+    font-family: "Maven Pro", sans-serif;
+  }
+  #mail {
+    text-decoration: underline;
+    color: #ffab91;
+  }
+  #mail:hover {
+    color: #18ffff;
+  }
+
+  .nouscontacter {
+    width: 100%;
+    color: #ffab91;
+    margin-top: 12%;
+    font-size: 230%;
+    font-family: Monotype Corsiva;
+    padding-top: 0;
+  }
+  #facebook {
+    border-radius: 5px;
+    width: 70px;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #facebook:hover {
+    transform: scale(1.05);
+  }
+  #facebook:active {
+    transform: scale(0.9);
+  }
+  .notrefacebook {
+    font-size: 20px;
+    font-family: "Maven Pro", sans-serif;
+    color: #39569b;
+    font-weight: bold;
+  }
+  #Instagram {
+    width: 70px;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #Instagram:hover {
+    transform: scale(1.05);
+  }
+  .notreinsta {
+    font-size: 20px;
+    font-family: "Maven Pro", sans-serif;
+    color: #39569b;
+    font-weight: bold;
+  }
+
+  #map {
+    width: 70px;
+
+    border: none;
+    outline: none;
+
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #map:hover {
+    transform: scale(1.05);
+  }
+  .notreadresse {
+    font-size: 20px;
+    font-family: "Maven Pro", sans-serif;
+    color: #39569b;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+}

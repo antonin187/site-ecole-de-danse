@@ -1,0 +1,182 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  width: 100%;
+  padding-bottom: 7%;
+  min-height: 100%;
+}
+.container {
+  width: 100%;
+  height: inherit;
+}
+.bandeau {
+  width: 100%;
+  background-color: #18ffff;
+}
+td {
+  width: 20%;
+  font-size: 17px;
+  font-family: Monotype Corsiva;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px; /* chaque largeur de cellule represente 20% de la largeur totale les cellules sont régulièrent étant donné qu'il y a 5 cellules*/
+}
+.bandeauacceuil,
+.bandeauclassique,
+.bandeaujazz,
+.bandeaucontact {
+  transition: 0.3s;
+  text-decoration: none;
+  color: black;
+}
+.bandeauéveil {
+  text-decoration: none;
+  color: white;
+}
+.bandeauacceuil:hover,
+.bandeauclassique:hover,
+.bandeaujazz:hover,
+.bandeauéveil:hover,
+.bandeaucontact:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.intropresentationeveil {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  font-family: Monotype Corsiva;
+  font-size: 35px;
+  text-decoration: underline;
+  color: #ffab91;
+}
+.presentcontainer {
+  display: block;
+  justify-content: initial;
+  padding-top: 50px;
+}
+#photoceveil {
+  width: 100%;
+  margin-top: 13px;
+}
+#eveilpic {
+  width: 100%;
+}
+.presentationeveil {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Maven Pro", sans-serif;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 30px;
+  line-height: 25px;
+}
+.present2 {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Maven Pro", sans-serif;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 60px;
+  line-height: 25px;
+}
+.emploidutempseveil {
+  text-align: center;
+  width: 98%;
+  border: solid 4px #18ffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: "Maven Pro", sans-serif;
+  margin-top: 60px;
+}
+.conclueveil {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Maven Pro", sans-serif;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 60px;
+  line-height: 25px;
+}
+#jazzlink,
+#classlink,
+#fblink {
+  color: #ffab91;
+  text-decoration: none;
+}
+#jazzlink:hover,
+#classlink:hover,
+#fblink:hover {
+  color: #18ffff;
+}
+
+.nouscontacter {
+  width: 100%;
+  color: #ffab91;
+  margin-top: 12%;
+  font-size: 230%;
+  font-family: Monotype Corsiva;
+}
+#facebook {
+  border-radius: 5px;
+  width: 70px;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#facebook:hover {
+  transform: scale(1.05);
+}
+#facebook:active {
+  transform: scale(0.9);
+}
+.notrefacebook {
+  font-size: 20px;
+  font-family: "Maven Pro", sans-serif;
+  color: #39569b;
+  font-weight: bold;
+}
+#Instagram {
+  width: 70px;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#Instagram:hover {
+  transform: scale(1.05);
+}
+.notreinsta {
+  font-size: 20px;
+  font-family: "Maven Pro", sans-serif;
+  color: #39569b;
+  font-weight: bold;
+}
+
+#map {
+  width: 70px;
+
+  border: none;
+  outline: none;
+
+  transition: 0.2s;
+  cursor: pointer;
+}
+#map:hover {
+  transform: scale(1.05);
+}
+.notreadresse {
+  font-size: 20px;
+  font-family: "Maven Pro", sans-serif;
+  color: #39569b;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}

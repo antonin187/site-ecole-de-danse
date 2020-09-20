@@ -1,0 +1,555 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  width: 100%;
+  padding-bottom: 7%;
+  min-height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: inherit;
+}
+
+#fondécran {
+  width: 100%;
+  margin-top: 3px;
+}
+#h1 {
+  text-align: center;
+  font-family: "Lobster Two", cursive;
+  font-size: 60px;
+  background-color: RGB(190, 153, 127);
+  z-index: 1;
+}
+#h2 {
+  text-align: center;
+  font-family: "Lobster Two", cursive;
+  background-color: RGB(219, 177, 153);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 50px;
+  z-index: 1;
+  margin-bottom: 3px;
+}
+.present {
+  position: absolute;
+  width: 100%;
+  top: 510px;
+  display: flex;
+  justify-content: space-between;
+}
+#photoestelle {
+  width: 300px;
+  border: #18ffff solid 5px;
+  margin-left: 10px;
+}
+#logo {
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  margin-top: 100px;
+  margin-right: 10px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Tous les boutons pour les chapitres ------------------------------------------------------------------------------------------------*/
+.acceuil,
+.Classique,
+.Jazz,
+.Eveil,
+.Contact {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  color: #ffab91;
+  font-size: 120%;
+  border: none;
+  text-decoration: none;
+  background-color: #504f4f29;
+  vertical-align: middle;
+  width: 19.4%;
+  margin: 2px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+/* font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  color: #ffab91;
+  font-size: 120%;
+  border: none;
+  text-decoration: none;
+  background-color: #504f4f29;
+  vertical-align: middle;
+  width: 20%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-radius: 50%;
+  margin-top: 17.5px;
+  margin-left: 50%;
+  transform: translate(-75px); */
+
+.acceuil:before,
+.Classique:before,
+.Jazz:before,
+.Eveil:before,
+.Contact:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: RGB(219, 177, 153);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.acceuil:hover,
+.acceuil:focus,
+.acceuil:active,
+.Classique:hover,
+.Classique:focus,
+.Classique:active,
+.Jazz:hover,
+.Jazz:focus,
+.Jazz:active,
+.Eveil:hover,
+.Eveil:focus,
+.Eveil:active,
+.Contact:hover,
+.Contact:focus,
+.Contact:active {
+  color: white;
+}
+.acceuil:hover:before,
+.acceuil:focus:before,
+.acceuil:active:before,
+.Classique:hover:before,
+.Classique:focus:before,
+.Classique:active:before,
+.Jazz:hover:before,
+.Jazz:focus:before,
+.Jazz:active:before,
+.Eveil:hover:before,
+.Eveil:focus:before,
+.Eveil:active:before,
+.Contact:hover:before,
+.Contact:focus:before,
+.Contact:active :before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.tableauboutons {
+  width: 100%;
+  background-color: white;
+  display: inline-block;
+  justify-content: space-around;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.textacceuil {
+  width: 100%;
+  padding-top: 70px;
+  text-align: center;
+}
+.containerimages {
+  width: 100%;
+  padding-top: 40px;
+}
+.echauffement {
+  background-image: url(echauffement.png);
+}
+.amelia {
+  background-image: url(amelia.png);
+}
+.cours {
+  background-image: url(cours.png);
+}
+
+.echauffement,
+.amelia,
+.cours {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: inherit;
+  transition: 0.5s;
+}
+.divpic1:hover .echauffement,
+.divpic2:hover .amelia,
+.divpic3:hover .cours {
+  transform: scale(1.1);
+}
+
+.divpic1:hover .pantalons,
+.divpic2:hover .sneakers,
+.divpic3:hover .casquettes {
+  transform: scale(1.1);
+}
+
+.divpic1,
+.divpic2,
+.divpic3 {
+  width: 32%;
+  height: 400px;
+  position: relative;
+  margin-left: 3px;
+  overflow: hidden;
+}
+.divpic1::after,
+.divpic2::after,
+.divpic3::after {
+  content: "";
+  background: black;
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  opacity: 0;
+  transition: 0.5s;
+}
+.divpic1:hover::after,
+.divpic2:hover::after,
+.divpic3:hover::after {
+  opacity: 0.8;
+}
+.images {
+  display: flex; /*met les photos les unes à la suite des autres horizontalement*/
+  justify-content: space-around; /* repartition des images proportionnellement*/
+}
+.description {
+  display: flex;
+  justify-content: space-around;
+}
+
+.divechauffement {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  font-family: "Lobster Two", cursive;
+  font-size: 30px;
+  color: #ffab91;
+  opacity: 0;
+  z-index: 3;
+  width: 99%;
+  padding-top: 185px;
+  padding-bottom: 200px;
+}
+
+.divpointes,
+.divclassique {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  font-family: "Lobster Two", cursive;
+  font-size: 30px;
+  color: #ffab91;
+  opacity: 0;
+  z-index: 3;
+  line-height: 60px;
+  width: 99%;
+  padding-top: 135px;
+  padding-bottom: 200px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.nouscontacter {
+  text-align: center;
+  color: #ffab91;
+  margin-top: 8%;
+  font-size: 330%;
+  font-family: "Lobster Two", cursive;
+}
+td {
+  width: 33%;
+}
+#facebook {
+  border-radius: 5px;
+  width: 130px;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#facebook:hover {
+  transform: scale(1.05);
+}
+#facebook:active {
+  transform: scale(0.9);
+}
+.notrefacebook {
+  font-size: 30px;
+  font-family: "Maven Pro", sans-serif;
+  color: #39569b;
+  font-weight: bold;
+}
+#Instagram {
+  width: 130px;
+
+  border: none;
+  outline: none;
+
+  transition: 0.2s;
+  cursor: pointer;
+}
+#Instagram:hover {
+  transform: scale(1.05);
+}
+.notreinsta {
+  font-size: 30px;
+  font-family: "Maven Pro", sans-serif;
+  color: #39569b;
+  font-weight: bold;
+}
+
+#map {
+  width: 130px;
+
+  border: none;
+  outline: none;
+
+  transition: 0.2s;
+  cursor: pointer;
+}
+#map:hover {
+  transform: scale(1.05);
+}
+.notreadresse {
+  font-size: 30px;
+  font-family: "Maven Pro", sans-serif;
+  color: #39569b;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  #h1 {
+    font-size: 40px;
+    font-family: Monotype Corsiva;
+  }
+  #h2 {
+    font-size: 20px;
+    font-family: Monotype Corsiva;
+  }
+  .present {
+    position: unset;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  #photoestelle {
+    width: 48%;
+    height: 200px;
+    border: #18ffff solid 5px;
+    margin-left: 0;
+  }
+  #logo {
+    z-index: 1;
+    width: 48%;
+    height: 200px;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .acceuil,
+  .Classique,
+  .Jazz,
+  .Eveil {
+    font-family: "Maven Pro", sans-serif;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    color: #ffab91;
+    font-size: 120%;
+    border: 2px solid #ffab91;
+    text-decoration: none;
+    background-color: #504f4f29;
+    vertical-align: middle;
+    width: 39%;
+    margin: 17.5px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 50%;
+  }
+  .Contact {
+    font-family: "Maven Pro", sans-serif;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    color: #ffab91;
+    font-size: 100%;
+    border: 2px solid #ffab91;
+    text-decoration: none;
+    background-color: #504f4f29;
+    vertical-align: middle;
+    width: 40%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 50%;
+    margin-top: 17.5px;
+    margin-left: 50%;
+    transform: translate(-75px);
+  }
+  .textacceuil {
+    width: 100%;
+    padding-top: 70px;
+    text-align: center;
+  }
+  .containerimages {
+    width: 100%;
+    padding-top: 40px;
+  }
+
+  .echauffement,
+  .amelia,
+  .cours {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: inherit;
+    transition: 0.5s;
+  }
+
+  .divpic1,
+  .divpic2,
+  .divpic3 {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+  .images {
+    width: 100%;
+    display: block;
+    justify-content: initial;
+  }
+  .divechauffement {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    font-family: "Lobster Two", cursive;
+    font-size: 30px;
+    color: #ffab91;
+    opacity: 0;
+    z-index: 3;
+    width: 99%;
+    padding-top: 80px;
+    padding-bottom: 200px;
+  }
+
+  .divpointes,
+  .divclassique {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    font-family: "Lobster Two", cursive;
+    font-size: 30px;
+    color: #ffab91;
+    opacity: 0;
+    z-index: 3;
+    line-height: 60px;
+    width: 99%;
+    padding-top: 45px;
+    padding-bottom: 200px;
+  }
+  .nouscontacter {
+    width: 100%;
+    color: #ffab91;
+    margin-top: 12%;
+    font-size: 230%;
+    font-family: Monotype Corsiva;
+  }
+  td {
+    width: 33%;
+  }
+  #facebook {
+    border-radius: 5px;
+    width: 70px;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #facebook:hover {
+    transform: scale(1.05);
+  }
+  #facebook:active {
+    transform: scale(0.9);
+  }
+  .notrefacebook {
+    font-size: 20px;
+    font-family: "Maven Pro", sans-serif;
+    color: #39569b;
+    font-weight: bold;
+  }
+  #Instagram {
+    width: 70px;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #Instagram:hover {
+    transform: scale(1.05);
+  }
+  .notreinsta {
+    font-size: 20px;
+    font-family: "Maven Pro", sans-serif;
+    color: #39569b;
+    font-weight: bold;
+  }
+
+  #map {
+    width: 70px;
+
+    border: none;
+    outline: none;
+
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #map:hover {
+    transform: scale(1.05);
+  }
+  .notreadresse {
+    font-size: 20px;
+    font-family: "Maven Pro", sans-serif;
+    color: #39569b;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
